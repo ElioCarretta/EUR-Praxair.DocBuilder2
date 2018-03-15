@@ -1,0 +1,23 @@
+﻿@model Praxair.Web.Components.Model.MenuBar
+
+<div class="container">
+    <div style="width: 20%; margin-left: auto" ng-class="{ \'hidden-sm\': !brandOnly }" class="navbar-header pull-left">
+        <a class="navbar-brand" href="@Model.BrandUrl" title="@Model.BrandTitle">
+            <img style="height: auto; width: 100%; min-width: 158px; min-height: 39px;" class="img-responsive" src="@Model.BrandLogo">
+        </a>
+    </div>
+    <div ng-style="displayMode()">
+        <div class="hidden-sm hidden-md hidden-lg visible-xs pull-right">
+            <button type="button" class="navbar-toggle" ng-click="toggleMenu()">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse pull-left" ng-class="{menuSlide: isVisible, in: isVisible}">
+            <ul class="nav navbar-nav"></ul>
+        </div>
+    </div>
+</div>
+
+

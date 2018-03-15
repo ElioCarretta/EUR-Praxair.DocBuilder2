@@ -1,0 +1,26 @@
+﻿@import (reference) "../../../node_modules/bootstrap/less/mixins.less";
+@import (reference) "./mixins.less";
+@import (reference) "./variables.less";
+
+ul.sidebar-item {
+    padding: 0 12px;
+
+    > li {
+        display: block;
+        padding-top: 5px;
+
+        > a {
+            text-decoration: none;
+            cursor: pointer;
+            color: @link-color;
+
+            &:hover, &:focus, &:active {
+                color: @gray-dark;
+            }
+        }
+    }
+
+    > li:not(:last-child) {
+        border-bottom: 1px dotted @gray-dark;
+    }
+}

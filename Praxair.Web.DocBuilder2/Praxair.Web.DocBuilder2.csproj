@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>5da7f5d3-d8b7-4979-8c9c-08aefcc23bc1</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\_Layout_orig.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Praxair.Web.Base.Localization.Json\Praxair.Web.Base.Localization.Json.csproj" />
+    <ProjectReference Include="..\Praxair.Web.Base\Praxair.Web.Base.csproj" />
+    <ProjectReference Include="..\Praxair.Web.Components\Praxair.Web.Components.csproj" />
+    <ProjectReference Include="..\Praxair.Web.Part.Login.IdentityServer\Praxair.Web.Part.Login.IdentityServer.csproj" />
+    <ProjectReference Include="..\Praxair.Web.Static\Praxair.Web.Static.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Views\**\*.cshtml" />
+  </ItemGroup>
+</Project>

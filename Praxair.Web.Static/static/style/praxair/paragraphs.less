@@ -1,0 +1,37 @@
+﻿@import (reference) "../../../node_modules/bootstrap/less/mixins.less";
+@import (reference) "./mixins.less";
+@import (reference) "./variables.less";
+
+.paragraph {
+    .paragraph( @default-bg, @default-bg-reverse, @grid-gutter-width);
+}
+
+.paragraph-narrow {
+    .paragraph( @default-bg, @default-bg-reverse, 0);
+}
+
+.paragraph-reverse {
+    .paragraph(@default-bg-reverse, @default-bg, @grid-gutter-width);
+}
+
+img.banner {
+    .banner(@grid-gutter-width);
+}
+
+a.green-arrow {
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+        color: lighten(@link-color, 10%);
+        text-decoration: none;
+    }
+
+    > span {
+        &:hover, &:focus, &:active {
+            &:after {
+                .menu-item-caret(20px, right, lighten(@link-color, 10%), 5px)
+            }
+        }
+    }
+}

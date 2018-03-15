@@ -1,0 +1,50 @@
+﻿@import (reference) "../../../node_modules/bootstrap/less/mixins.less";
+@import (reference) "./mixins.less";
+@import (reference) "./variables.less";
+
+#main-menu {
+    & > li.menu-item-has-children > a {
+
+        @media (max-width: @screen-xs-max) {
+            padding: 10px 0px;
+        }
+
+        @media (min-width: @screen-sm) {
+            padding: 26px 0px;
+
+            & > span {
+                padding: 0px 5px;
+            }
+        }
+
+        @media (min-width: @screen-md) {
+            & > span {
+                padding: 0px 20px;
+            }
+        }
+
+        @media (min-width: @screen-lg) {
+            & > span {
+                padding: 0px 32px;
+            }
+        }
+    }
+}
+
+div.navbar-collapse.pull-right {
+    @media (max-width: @screen-xs-max) {
+        padding-right: 0;
+        margin-right: -@navbar-padding-horizontal;
+    }
+
+    @media (max-width: @screen-xs-max) {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    fieldset h3 {
+        font-size: floor(@font-size-base * 1.4);
+    }
+}

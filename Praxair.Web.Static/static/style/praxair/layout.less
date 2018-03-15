@@ -1,0 +1,55 @@
+﻿@import (reference) "../../../node_modules/bootstrap/less/mixins.less";
+@import (reference) "./mixins.less";
+@import (reference) "./variables.less";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: table;
+    width: 100%;
+    padding-top: 104px !important;
+}
+
+#main {
+    height: 100%;
+    display: table-row;
+}
+
+#container {
+    display: block;
+    padding: 10px 10px 0 10px;
+}
+
+#bottom {
+    width: 100%;
+    background: #000;
+    display: table-row;
+}
+
+#content {
+    padding: 85px 0 20px 0;
+}
+
+.content-area {
+    background-color: white;
+    padding: 5px 28px 28px 28px;
+}
+
+.content-area-fixed {
+    .content-area;
+    min-height: 500px;
+} 
+
+.content-area-full {
+    background-color: @default-bg;
+}
+
+.content-block {
+    padding: 0 28px 0 28px;
+}
+

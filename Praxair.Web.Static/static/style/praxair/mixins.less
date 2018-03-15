@@ -1,0 +1,104 @@
+﻿@import (reference) "../../../node_modules/bootstrap/less/mixins.less";
+@import (reference) "./variables.less";
+
+.paragraph(@color, @reversecolor, @gridgutterwidth) {
+    .clearfix();
+    background-color: @color;
+    color: @reversecolor;
+    padding: 0 @gridgutterwidth;
+    margin: (@gridgutterwidth / 2) 0;
+
+    > h4:first-child {
+        text-transform: uppercase;
+        color: @gray-light;
+        font-size: @font-size-small;
+        font-weight: bold;
+        margin-top: @grid-gutter-width;
+    }
+
+    > h3:first-child {
+        text-transform: uppercase;
+        color: @gray-light;
+        font-size: @font-size-base;
+        font-weight: bold;
+        margin-top: @grid-gutter-width;
+    }
+
+    > div:first-child {
+        color: @gray-light;
+        font-size: @font-size-small;
+        margin-top: @gridgutterwidth;
+    }
+
+    > .header {
+        text-align: justify;
+        border-top: 1px dotted @reversecolor;
+        padding-top: 8px
+    }
+}
+
+.banner(@gridgutterwidth) {
+    margin-top: @gridgutterwidth / 2;
+    margin-bottom: -1 * @gridgutterwidth;
+}
+
+.menu-item-caret(@width, @float, @color, @margin-top) {
+    display: block;
+    content: " ";
+    float: @float;
+    width: @width;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: @color;
+    margin-top: @margin-top;
+    margin-right: -10px;
+}
+
+.list-menu(@color, @hovercolor, @bordercolor, @backgroundcolor, @height, @fontsize, @texttransform, @floatleft) {
+    padding: 4px 0;
+    margin: 0;
+    font-family: helvetica-neue-medium, sans-serif;
+    font-size: @fontsize;
+    line-height: @height;
+    color: @color;
+    background-color: @backgroundcolor;
+
+    > li {
+        position: relative;
+        display: inline;
+        list-style: none outside none;
+        text-decoration: none;
+        text-transform: @texttransform;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .list-menu-border(@floatleft, @bordercolor);
+
+    > li span,
+    > li a,
+    > li a:visited,
+    > li a:active {
+        color: @color;
+    }
+
+    > li span:hover,
+    > li a:hover {
+        color: @hovercolor;
+        text-decoration: underline;
+    }
+}
+
+.list-menu-border(@floatleft, @bordercolor) when (@floatleft = true) {
+    > li {
+        border-right: @bordercolor solid 1px;
+    }
+}
+
+.list-menu-border(@floatleft, @bordercolor) when (@floatleft = false) {
+    > li:not(:last-child) {
+        border-right: @bordercolor solid 1px;
+    }
+}

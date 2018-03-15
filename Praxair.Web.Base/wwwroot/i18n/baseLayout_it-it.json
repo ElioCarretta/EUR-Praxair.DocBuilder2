@@ -1,0 +1,10 @@
+{
+  "PRAXAIR.WEB.BASE": {
+    "BASELAYOUT": {
+      "UNSUPPORTEDBROWSER": {
+        "HEADER": "Attenzione! Questo sito non supporta la versione 8 e le precedenti di Internet Explorer.",
+        "BODY": "Si raccomanda di aggiornare il browser all'ultima versione di <a href=\"http://windows.microsoft.com/ie\">Internet Explorer</a>, <a href=\"https://chrome.google.com\">Google Chrome</a>, o <a href=\"https://mozilla.org/firefox/\">Firefox</a>. Se stai usando IE9 o successivo, assicurati <a href=\"http://windows.microsoft.com/it-IT/windows7/webpages-look-incorrect-in-Internet-Explorer\">di aver disattivato la modalit&#224; \"Compatibilit&#224;\"</a>."
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Razor\Views\Shared\_ComponentsLayout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Razor\Views\Shared\_ComponentsLayout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Praxair.Web.Base\Praxair.Web.Base.csproj" />
+    <ProjectReference Include="..\Praxair.Web.Static\Praxair.Web.Static.csproj" />
+  </ItemGroup>
+
+</Project>

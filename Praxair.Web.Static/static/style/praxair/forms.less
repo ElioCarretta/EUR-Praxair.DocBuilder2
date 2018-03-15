@@ -1,0 +1,22 @@
+﻿@import (reference) "../../../node_modules/bootstrap/less/mixins.less";
+@import (reference) "./mixins.less";
+@import (reference) "./variables.less";
+
+@media (max-width: @screen-sm-max) {
+    .field-container {
+        min-height: 90px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: @screen-md) {
+    .field-container {
+        min-height: 70px;
+        margin-bottom: 0;
+    }
+}
+
+.field-container-readonly {
+    min-height: 50px;
+    margin-bottom: 0;
+}

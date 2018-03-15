@@ -1,0 +1,53 @@
+﻿@{
+    Layout = $"~/Views/Shared/_BaseLayout.cshtml";
+}
+
+
+@section CL_StylesSection {
+
+    <link rel="stylesheet" href="~/style/praxair.web.components.css">
+    @RenderSection("L_StylesSection", false)
+
+}
+
+@section CL_ScriptsSection {
+
+    @RenderSection("L_ScriptsSection", false)
+
+}
+
+@section CL_TopMenuSection {
+
+
+}
+
+@section CL_MenuBarSection {
+
+    @await Component.InvokeAsync("MenuBar")
+
+}
+
+@section CL_HeaderSection {
+
+    @RenderSection("L_HeaderSection", false)
+
+}
+
+@section CL_SidebarSection{
+
+    @RenderSection("L_SidebarSection", false)
+
+}
+
+@section CL_BodySection{
+
+    @RenderSection("L_BodySection", false)
+
+}
+
+@section CL_FooterSection {
+
+    @await Component.InvokeAsync("Footer")
+    @RenderSection("L_FooterSection", false)
+
+}

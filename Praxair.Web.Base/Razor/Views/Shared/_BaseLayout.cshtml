@@ -1,0 +1,80 @@
+﻿@*@using Microsoft.AspNetCore.Mvc.Localization*@
+@using Praxair.Web.Base
+@*@inject IHtmlLocalizer<BaseLayout> Localizer*@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/icons/favicon.ico" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--[if lte IE 8]>
+        <style type="text/css">
+            .ie8 { display: block !important; }
+        </style>
+    <![endif]-->
+
+    <style>
+        body {
+            padding-top: 104px;
+        }
+    </style>
+    <link rel="stylesheet" href="~/style/praxair.web.static.css">
+    <link rel="stylesheet" href="~/style/praxair.web.base.css">
+
+    @RenderSection("CL_StylesSection", false)
+
+</head>
+<body>
+
+    <script defer src="~/lib/praxair.web.static.js"></script>
+    @RenderSection("CL_ScriptsSection", false)
+
+    <div class="navbar navbar-default navbar-fixed-top" id="top">
+
+        <div id="unsupportedBrowser" style="top: 0;" class="browser-banner warning ie8">
+            <div class="browser-banner-text unsupported-icon">
+                <p>
+                    @*<b>@Localizer["UNSUPPORTEDBROWSER.HEADER"]</b><br />
+                    @Localizer["UNSUPPORTEDBROWSER.BODY"]*@
+                </p>
+                <button class="browser-banner-close" onclick="document.getElementById('unsupportedBrowser').style.cssText = 'display:none !important';"></button>
+            </div>
+        </div>
+
+        @RenderSection("CL_BannerSection", false)
+
+        <div class="navbar-top-content">
+            <ul class="topbar-menu">
+                @RenderSection("CL_TopMenuSection", false)
+            </ul>
+        </div>
+
+        <div class="navbar-bottom-content">
+            @RenderSection("CL_MenuBarSection", false)
+        </div>
+
+    </div>
+
+    <div id="main" class="container">
+        <div id="container">
+            <div class="row">
+                @RenderSection("CL_HeaderSection", false)
+            </div>
+
+            <div class="row">
+                @RenderSection("CL_SidebarSection", false)
+                @RenderSection("CL_BodySection", false)
+            </div>
+
+            <div class="row">
+                @RenderSection("CL_FooterSection", false)
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿@import (reference) "../../../node_modules/bootstrap/less/mixins.less";
+@import (reference) "./mixins.less";
+@import (reference) "./variables.less";
+
+td {
+    &.has-info {
+        color: @brand-info !important;
+    }
+
+    &.has-success {
+        color: @brand-success !important;
+    }
+
+    &.has-warning {
+        color: @brand-warning !important;
+    }
+
+    &.has-error {
+        color: @brand-danger !important;
+    }
+}
+
+tr.active > td {
+    background-color: @state-success-bg !important;
+}

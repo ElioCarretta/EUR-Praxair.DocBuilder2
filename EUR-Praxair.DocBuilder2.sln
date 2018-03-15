@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Praxair.Web.Part.Login.IdentityServer", "Praxair.Web.Part.Login.IdentityServer\Praxair.Web.Part.Login.IdentityServer.csproj", "{878F978D-CBD3-40D6-8F06-382211550E46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Praxair.Web.Base", "Praxair.Web.Base\Praxair.Web.Base.csproj", "{7A4EDCCF-8989-41FD-BC60-E3ADF95F2BCE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Praxair.Web.DocBuilder2", "Praxair.Web.DocBuilder2\Praxair.Web.DocBuilder2.csproj", "{D367BA0F-C296-490A-B7F7-71583AC14E65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Praxair.Web.Static", "Praxair.Web.Static\Praxair.Web.Static.csproj", "{C7BDBA4E-4139-4EDA-ABEF-0B5C2A3FDDFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Praxair.Web.Components", "Praxair.Web.Components\Praxair.Web.Components.csproj", "{6B79BC71-4173-4946-8009-13DB449BF033}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Praxair.Web.Base.Localization.Json", "Praxair.Web.Base.Localization.Json\Praxair.Web.Base.Localization.Json.csproj", "{2DA0BF55-C9DF-445E-A361-CCA6BC5A8E30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{878F978D-CBD3-40D6-8F06-382211550E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878F978D-CBD3-40D6-8F06-382211550E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878F978D-CBD3-40D6-8F06-382211550E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878F978D-CBD3-40D6-8F06-382211550E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4EDCCF-8989-41FD-BC60-E3ADF95F2BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4EDCCF-8989-41FD-BC60-E3ADF95F2BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4EDCCF-8989-41FD-BC60-E3ADF95F2BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4EDCCF-8989-41FD-BC60-E3ADF95F2BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D367BA0F-C296-490A-B7F7-71583AC14E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D367BA0F-C296-490A-B7F7-71583AC14E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D367BA0F-C296-490A-B7F7-71583AC14E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D367BA0F-C296-490A-B7F7-71583AC14E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BDBA4E-4139-4EDA-ABEF-0B5C2A3FDDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BDBA4E-4139-4EDA-ABEF-0B5C2A3FDDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BDBA4E-4139-4EDA-ABEF-0B5C2A3FDDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BDBA4E-4139-4EDA-ABEF-0B5C2A3FDDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B79BC71-4173-4946-8009-13DB449BF033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B79BC71-4173-4946-8009-13DB449BF033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B79BC71-4173-4946-8009-13DB449BF033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B79BC71-4173-4946-8009-13DB449BF033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA0BF55-C9DF-445E-A361-CCA6BC5A8E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA0BF55-C9DF-445E-A361-CCA6BC5A8E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA0BF55-C9DF-445E-A361-CCA6BC5A8E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA0BF55-C9DF-445E-A361-CCA6BC5A8E30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E9AD492-0AB7-471C-8DE7-8C5451DA5410}
+	EndGlobalSection
+EndGlobal

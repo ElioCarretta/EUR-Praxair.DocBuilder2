@@ -1,0 +1,26 @@
+[
+  {
+    "outputFileName": "wwwroot/style/praxair.web.static.css",
+    "inputFiles": [
+      "node_modules/font-awesome/css/font-awesome.css",
+      "static/style/bootstrap.css",
+      "static/style/praxair.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "adjustRelativePaths": false
+    }
+  },
+    {
+      "outputFileName": "wwwroot/lib/praxair.web.static.js",
+      "inputFiles": [
+        "node_modules/jquery/dist/jquery.js",
+        "node_modules/bootstrap/dist/bootstrap.js",
+        "node_modules/lodash/lodash.js"
+      ],
+      "minify": {
+        "enabled": true,
+        "adjustRelativePaths": false
+      }
+    }
+]

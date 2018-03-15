@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="wwwroot\**\*.*" />
+  </ItemGroup>  
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\" />
+    <Folder Include="wwwroot\icons\" />
+    <Folder Include="wwwroot\style\" />
+  </ItemGroup>  
+
+  <ItemGroup>
+    <EmbeddedResource Update="wwwroot\lib\praxair.web.static.min.js">
+      <DependentUpon>praxair.web.static.js</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="wwwroot\style\praxair.web.static.min.css">
+      <DependentUpon>praxair.web.static.css</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="static\style\bootstrap.css">
+      <DependentUpon>bootstrap.less</DependentUpon>
+    </None>
+    <None Update="static\style\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </None>
+    <None Update="static\style\praxair.css">
+      <DependentUpon>praxair.less</DependentUpon>
+    </None>
+    <None Update="static\style\praxair.min.css">
+      <DependentUpon>praxair.css</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>

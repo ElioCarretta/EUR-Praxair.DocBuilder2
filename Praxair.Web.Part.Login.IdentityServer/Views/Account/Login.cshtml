@@ -1,0 +1,48 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<div style="height:40px;">&nbsp;</div>
+<div style="margin:10px" class="formdecorator">
+    @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+    {
+        <div>@Html.ValidationSummary(true)</div>
+        <div class="panel panel-default" style="width:200px;">
+            <div class="panel-heading">
+                <h4 class="panel-title" style="font-size:13px"><b>ACCESSO</b></h4>
+            </div>
+            <div class="panel-body">
+                <fieldset>
+                    <div class="form-group" style="min-height:50px;margin-bottom:0;">
+                        <div class="form-group">
+                            <label>Nome Utente</label>
+                            @Html.TextBoxFor(m => m.UserName, new { style = "width: 150px", @class = "form-control single-line" })
+                            @Html.ValidationMessageFor(m => m.UserName)
+                        </div>
+                    </div>
+                    <div class="form-group" style="min-height:50px;margin-bottom:0;">
+                        <div class="form-group">
+                            <label ng-bind="$fieldLabel" for="password" class="ng-binding">Password</label>
+                            @Html.PasswordFor(m => m.Password, new { style = "width: 150px", @class = "form-control single-line" })
+                            @Html.ValidationMessageFor(m => m.Password)
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            Ricordami
+                        </label>
+                    </div>
+                    <div class="form-group text-center">
+                        <input class="btn btn-lg btn-success btn-block" type="submit" value="Entra">
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    }
+</div>
+
+@*@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}*@
